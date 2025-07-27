@@ -1,6 +1,6 @@
 # 🏢 Oakyard - Space Booking Platform
 
-A modern, full-featured space booking platform built with React, Redux, and Supabase. Oakyard connects space owners with people looking for unique venues for meetings, events, coworking, and more.
+A modern, full-featured space booking platform built with React for frontend and Flask for backend. Oakyard connects space owners with people looking for unique venues for meetings, events, coworking, and more.
 
 ## ✨ Features
 
@@ -54,6 +54,7 @@ A modern, full-featured space booking platform built with React, Redux, and Supa
 
 ### **Backend Integration**
 - **Supabase** - Backend-as-a-Service with PostgreSQL
+- **PostgreSQL** - Relational database for data storage
 - **Socket.io** - Real-time communication
 - **React Query** - Server state management
 
@@ -139,75 +140,6 @@ src/
 - **`src/contexts/AuthContext.jsx`** - Authentication context
 - **`src/components/layout/Header.jsx`** - Navigation header
 
-## 🌐 Deployment
-
-### **Vercel Deployment** (Recommended)
-
-1. **Connect to Vercel**
-   - Import project to Vercel
-   - Configure environment variables
-   - Deploy automatically
-
-2. **Manual Deployment**
-   ```bash
-   npm run build
-   vercel --prod
-   ```
-
-### **Other Platforms**
-- **Netlify**: Works out of the box with `npm run build`
-- **Firebase Hosting**: Configure `firebase.json` for SPA routing
-- **AWS S3**: Use with CloudFront for SPA routing
-
-### **Environment Variables for Production**
-```env
-VITE_SUPABASE_URL=your_production_supabase_url
-VITE_SUPABASE_ANON_KEY=your_production_supabase_key
-VITE_SOCKET_URL=your_production_socket_url
-```
-
-## 🔧 Configuration
-
-### **Supabase Setup**
-1. Create a new Supabase project
-2. Set up authentication providers
-3. Create database tables for spaces, bookings, users
-4. Configure RLS (Row Level Security) policies
-5. Add your Supabase URL and keys to environment variables
-
-### **Authentication**
-- Email/password authentication
-- Social login (Google, GitHub) - configurable
-- Protected routes with authentication middleware
-- Role-based access control (admin, user, space owner)
-
-## 🎨 Customization
-
-### **Theming**
-The app uses Tailwind CSS with CSS custom properties for theming:
-
-```css
-/* Light theme */
-:root {
-  --primary: 220 70% 50%;
-  --secondary: 210 40% 98%;
-  --accent: 142 86% 28%;
-}
-
-/* Dark theme */
-.dark {
-  --primary: 220 70% 50%;
-  --secondary: 222.2 84% 4.9%;
-  --accent: 142 86% 28%;
-}
-```
-
-### **Adding New Components**
-Use the shadcn/ui CLI to add new components:
-```bash
-npx shadcn-ui@latest add button
-npx shadcn-ui@latest add dialog
-```
 
 ## 📱 Features in Detail
 
@@ -233,21 +165,6 @@ npx shadcn-ui@latest add dialog
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🆘 Support
-
-### **Getting Help**
-- **Documentation**: Check this README and inline code comments
-- **Issues**: Report bugs and request features via GitHub Issues
-- **Community**: Join our Discord/Slack community (link coming soon)
-
-### **Common Issues**
-- **Build Errors**: Ensure all dependencies are installed with `npm install`
-- **Environment Variables**: Check that all required env vars are set
-- **Supabase Connection**: Verify Supabase URL and keys are correct
-
-## 👨‍💻 Development Team
-
-Built with ❤️ by the Oakyard development team.
 
 ---
 
