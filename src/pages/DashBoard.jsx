@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
-import { useAuth } from '../contexts/AuthContext';
+import { useAuth } from '../contexts/Authcontext';
 import { setBookings } from '../store/slices/bookingsSlice';
 import { mockBookings } from '../data/mockData';
 import { Button } from '@/components/ui/button';

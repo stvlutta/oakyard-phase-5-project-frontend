@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import { useAuth } from '../contexts/AuthContext';
+import { useAuth } from '../contexts/Authcontext';
 import { meetingsApi } from '../services/meetingsApi';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';

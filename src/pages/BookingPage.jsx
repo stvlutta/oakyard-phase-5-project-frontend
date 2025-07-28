@@ -2,7 +2,7 @@
 import { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
-import { useAuth } from '../contexts/AuthContext';
+import { useAuth } from '../contexts/Authcontext';
 import { setCurrentSpace } from '../store/slices/spacesSlice';
 import { addBooking } from '../store/slices/bookingsSlice';
 import { mockSpaces } from '../data/mockData';

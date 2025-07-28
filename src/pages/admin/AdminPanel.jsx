@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
-import { useAuth } from '../../contexts/AuthContext';
+import { useAuth } from '../../contexts/Authcontext';
 import { setSpaces, addSpace, updateSpace, deleteSpace, setLoading } from '../../store/slices/spacesSlice';
 import { useRealtimeSpaces } from '../../hooks/useRealtimeSpaces';
 import { setBookings } from '../../store/slices/bookingsSlice';

@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
-import { useAuth } from '../contexts/AuthContext';
+import { useAuth } from '../contexts/Authcontext';
 import { setCurrentSpace } from '../store/slices/spacesSlice';
 import { mockSpaces } from '../data/mockData';
 import { Button } from '@/components/ui/button';
